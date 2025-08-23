@@ -1,0 +1,22 @@
+tasks
+
+setup config 2 hour 
+    docker desktop windows setup 1 hour
+    define yaml file and setup 1 hour
+        images (node, postgres etc)
+
+api rest 6 hours
+    api basic fixed data 2 hours
+    creating, model and integrate database with api 4 hours
+
+RabbitMQ + Worker
+    study and understand 2 hours
+
+
+documentation 2 hour
+    how to run
+    why's ?
+------------------------------
+
+optionals
+
