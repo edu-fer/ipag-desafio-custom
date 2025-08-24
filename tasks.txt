@@ -1,22 +1,64 @@
-tasks
+tarefas 
 
-setup config 2 hour 
-    docker desktop windows setup 1 hour
-    define yaml file and setup 1 hour
-        images (node, postgres etc)
+sub-total de horas: 22
+margem de segurança: 25% à mais
+total de horas: 27,5
 
-api rest 6 hours
-    api basic fixed data 2 hours
-    creating, model and integrate database with api 4 hours
-
-RabbitMQ + Worker
-    study and understand 2 hours
+**OBS: pode ser que eu mudo esse arquivo, caso venha a fazer algo a mais, como os opcionais e/ou algum outro ponto das tarefas.
+caso eu mudar, irei versionar de algum modo, além do histórico dos commits, para ficar mais fácil e rápido o entendimento.
+saliento que, nunca usei RabbitMQ. já trabalhei com algo semelhante eu creio, que foi o cloud tasks e workers do google cloud.
+me esforçarei ao máximo para criar a melhor solução. desde já agradeço novamente a oportunidade!!
 
 
-documentation 2 hour
-    how to run
-    why's ?
-------------------------------
+título: configuração de ambiente
+descrição: farei a instalação, configuração do docker desktop na minha máquina (windows 10) e definição das confirações do arquivo ymal do projeto
+horas: 3
+sub-tarefas:
+    título: docker desktop
+    descrição: 
+    horas: 1
 
-optionals
+    título: configurar yaml e docker
+    descrição: definição do arquivo yaml com as imagens e configurações docker
+    horas: 2
+
+título: api rest
+descrição:
+horas: 6
+sub-tarefas: 
+    título: contrução báscia com dados fixos
+    descrição: 
+    horas: 2
+    
+    título: integrar com banco de dados
+    descrição: criar banco, modelar, criar migrações e integrar com a api
+    horas: 4
+
+título: RabbitMQ + Worker
+descrição: 
+horas: 10
+sub-tarefas:
+    título: pesquisar sobre e entender como funciona
+    descrição:
+    horas: 3
+    
+    título: implementar na api
+    descrição: 
+    horas: 7
+
+título: documentações
+descrição: 
+horas: 3
+sub-tarefas:
+    título: como rodar o projeto
+    descrição:
+    horas: 1
+
+    título: explicações da estrutura do projeto
+    descrição:
+    horas: 1
+
+    título: explanações das decisões
+    descrição:
+    horas: 1
 
