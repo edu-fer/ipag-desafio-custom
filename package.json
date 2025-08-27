@@ -2,7 +2,9 @@
   "name": "ipag-desafio-custom",
   "version": "1.0.0",
   "scripts": {
-  "build:watch": "npm run clean && npx swc src -w --copy-files -d lib --strip-leading-paths"
+    "dev": "npm run build && node lib/index.js",
+    "build": "swc src -d lib --copy-files --strip-leading-paths",
+    "build:watch": "npx swc src -w --copy-files -d lib --strip-leading-paths"
   },
   "main": "lib/index.js",
   "author": "",
@@ -10,14 +12,25 @@
   "type": "module",
   "description": "",
   "dependencies": {
-    "amqplib": "^0.10.8"
+    "amqplib": "^0.10.8",
+    "express": "^5.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.2",
     "@swc/cli": "^0.7.8",
     "@swc/core": "^1.13.5",
     "@types/amqplib": "^0.10.7",
+    "@types/express": "^5.0.3",
     "@types/node": "^24.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.41.0",
+    "@typescript-eslint/parser": "^8.41.0",
+    "chokidar": "^4.0.3",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
     "typescript": "^5.9.2"
   }
 }

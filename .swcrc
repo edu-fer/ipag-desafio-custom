@@ -1,19 +1,25 @@
 {
   "$schema": "https://swc.rs/schema.json",
   "jsc": {
-    "parser": { 
+    "parser": {
       "syntax": "typescript",
-      "decorators": true
+      "tsx": false,
+      "decorators": true,
+      "dynamicImport": true
     },
-    "transform": {},
-    "target": "es2024",
-    "baseUrl": "./",
-    "paths": {}
+    "target": "es2022",
+    "loose": false,
+    "externalHelpers": false,
+    "keepClassNames": true,
+    "preserveAllComments": false
   },
-  "sourceMaps": true,
-  "isModule": true,
-  "module":{
+  "module": {
     "type": "es6",
-    "resolveFully": true
-  }
+    "strict": false,
+    "strictMode": true,
+    "lazy": false,
+    "noInterop": false
+  },
+  "minify": false,
+  "sourceMaps": true
 }
