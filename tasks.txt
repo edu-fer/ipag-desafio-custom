@@ -10,7 +10,7 @@ saliento que, nunca usei RabbitMQ. já trabalhei com algo semelhante eu creio, q
 me esforçarei ao máximo para criar a melhor solução. desde já agradeço novamente a oportunidade!!
 
 
-título: configuração de ambiente
+título: configuração de ambiente OK
 descrição: farei a instalação, configuração do docker desktop na minha máquina (windows 10) e definição das confirações do arquivo ymal do projeto
 horas: 3
 sub-tarefas:
@@ -26,7 +26,7 @@ título: api rest
 descrição:
 horas: 6
 sub-tarefas: 
-    título: contrução báscia com dados fixos
+    título: contrução báscia com dados fixos OK
     descrição: 
     horas: 2
     
