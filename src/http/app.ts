@@ -1,7 +1,6 @@
-import express, { Application } from "express";
-import route from "./routes";
+import express, { Application } from 'express';
+import { routes } from './routes';
 
-const app: Application = express();
+export const app: Application = express();
 app.use(express.json());
-app.use('/api/v1', route);
-export default app;
+app.use('/api/v1', routes);
