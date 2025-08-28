@@ -1,5 +1,8 @@
 import { Router } from "express";
+import { createOrderIndex } from "./createOrder";
 
 const route = Router();
 
-route.post('/', (req, res) => {console.log(req); return res.status(200).json({success: true})})
+route.get('/', createOrderIndex)
+
+export default route;
