@@ -61,4 +61,48 @@ sub-tarefas:
     título: explanações das decisões
     descrição:
     horas: 1
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+conectar com banco
+    criar migrations
+    criar seeds
+    implementar os endpoints
+        criar validaçao para o fluxo de troca de status
+        aplicar regras de negocio
+        estabelecer padrao de retorno sematico 
+        revisar os melhores padroes em api rest
+        criar fluxo de mensageria
+adicionar documentacao com swagger
+documentar como rodar
 
+setup ok
+build ok
+estudo sobre amqp ok
+    implementacao de exemplo com amqp
+
+
+opcicionais
+
+
+
+
+
+
+====================================
+
+Nível I:
+    Validação robusta de dados de entrada
+    Logs estruturados em formato JSON
+    README detalhado com exemplos de uso
+Nível II:
+    Testes automatizados (unitários e integração)
+    API documentation (Swagger/OpenAPI)
+    Health checks para API e Worker
+    Rate limiting básico nos endpoints
+Nivel III:
+    Dead Letter Queue para mensagens com falha
+    Metrics/Monitoring básico (contadores, timers)
+    Graceful shutdown dos serviços
+    Environment-based configuration
+    Database connection poolingv
+
+Collection do Postman/Insomnia para testes (opcional)

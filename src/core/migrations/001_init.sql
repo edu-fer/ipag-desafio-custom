@@ -1,4 +1,5 @@
-create table if not exists order (
+create table if not exists customer (
     id serial primary key,
-    name 
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL
 )
