@@ -9,18 +9,19 @@ services:
     image: postgres:16
     container_name: postgres
     ports:
-      - "5432:5432"
+      - '5432:5432'
     environment:
       POSTGRES_USER: myuser
       POSTGRES_PASSWORD: mypassword
       POSTGRES_DB: mydb
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./seed.sql:/docker-entrypoint-initdb.d/seed.sql
   api:
     build: .
     container_name: myapp
     ports:
-      - "3000:3000"
+      - '3000:3000'
     depends_on:
       - rabbitmq
       - postgres

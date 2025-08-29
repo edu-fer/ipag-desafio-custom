@@ -63,13 +63,13 @@ sub-tarefas:
     horas: 1
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 conectar com banco
-    criar migrations
-    criar seeds
+    criar migrations ok
+    criar seeds 
     implementar os endpoints
-        criar validaçao para o fluxo de troca de status
+        criar validaçao para o fluxo de troca de status ok
         aplicar regras de negocio
-        estabelecer padrao de retorno sematico 
-        revisar os melhores padroes em api rest
+        estabelecer padrao de retorno sematico  ok 
+        revisar os melhores padroes em api rest 
         criar fluxo de mensageria
 adicionar documentacao com swagger
 documentar como rodar
