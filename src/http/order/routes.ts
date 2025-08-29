@@ -10,6 +10,30 @@ import { Router } from 'express';
 
 export const ordersRoutes = Router();
 
+/**
+ * @openapi
+ * /orders:
+ *   post:
+ *     summary: Cria um novo pedido
+ *     tags:
+ *       - Orders
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/CreateOrder'
+ *     responses:
+ *       201:
+ *         description: Pedido criado com sucesso
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 orderId:
+ *                   type: string
+ */
 ordersRoutes.post('/', customZodErrorValidate(createOrderValidation), createOrderIndex);
 ordersRoutes.get(
   '/:orderId',

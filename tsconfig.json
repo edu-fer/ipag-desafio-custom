@@ -16,6 +16,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "paths": {
+      "@config/*": ["./src/core/config/*"],
       "@models/*": ["./src/core/models/*"],
       "@repositories/*": ["./src/core/repositories/*"],
       "@utils/*": ["./src/core/utils/*"],
