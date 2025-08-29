@@ -71,8 +71,8 @@ conectar com banco
         estabelecer padrao de retorno sematico  ok 
         revisar os melhores padroes em api rest 
         criar fluxo de mensageria
-adicionar documentacao com swagger
-documentar como rodar
+adicionar documentacao com swagger ok
+documentar como rodar ok
 
 setup ok
 build ok
