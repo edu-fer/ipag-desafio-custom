@@ -1,6 +1,6 @@
-import { Router } from "express";
-import {ordersRoutes} from './order/routes.js'
+import { ordersRoutes } from '@http/order/routes.js';
+import { Router } from 'express';
 
 export const routes = Router();
 
-routes.use('/orders', ordersRoutes)
+routes.use('/orders', ordersRoutes);

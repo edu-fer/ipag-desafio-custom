@@ -10,13 +10,15 @@ export const createOrderValidation = z.object({
   }),
   order: z.object({
     total_value: z.number().nonnegative(),
-    items: z.array(
-      z.object({
-        product_name: z.string().trim(),
-        quantity: z.number().int().positive(),
-        unit_value: z.number().nonnegative(),
-      }),
-    ).min(1), // garante pelo menos 1 item
+    items: z
+      .array(
+        z.object({
+          product_name: z.string().trim(),
+          quantity: z.number().int().positive(),
+          unit_value: z.number().nonnegative(),
+        })
+      )
+      .min(1),
   }),
 });
 export type CreateOrderType = z.infer<typeof createOrderValidation>;

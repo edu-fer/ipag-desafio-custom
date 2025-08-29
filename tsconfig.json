@@ -14,7 +14,17 @@
     "sourceMap": true,
     "types": ["node"],
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@models/*": ["./src/core/models/*"],
+      "@repositories/*": ["./src/core/repositories/*"],
+      "@utils/*": ["./src/core/utils/*"],
+      "@middlewares/*": ["./src/core/middlewares/*"],
+      "@enums/*": ["./src/core/enums/*"],
+      "@services/*": ["./src/core/services/*"],
+      "@http/*": ["./src/http/*"],
+      "@interfaces/*": ["./src/core/interfaces/*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]

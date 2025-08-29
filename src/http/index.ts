@@ -1,5 +1,5 @@
+import { routes } from '@http/routes';
 import express, { Application } from 'express';
-import { routes } from './routes';
 
 export const app: Application = express();
 app.use(express.json());
