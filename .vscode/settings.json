@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "editor.indentSize": "2",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit",
+    "source.addMissingImports.ts": "always"
+  },
+  "material-icon-theme.activeIconPack": "nest",
+  "material-icon-theme.folders.associations": {
+    "repositories": "Database",
+    "http": "Public",
+    "use-cases": "Contract",
+    "credentials": "Secure",
+    "crons": "Archive",
+    "workers": "Server"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "types": ["node"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@config/*": ["./src/core/config/*"],
+      "@models/*": ["./src/core/models/*"],
+      "@repositories/*": ["./src/core/repositories/*"],
+      "@utils/*": ["./src/core/utils/*"],
+      "@middlewares/*": ["./src/core/middlewares/*"],
+      "@enums/*": ["./src/core/enums/*"],
+      "@services/*": ["./src/core/services/*"],
+      "@http/*": ["./src/http/*"],
+      "@interfaces/*": ["./src/core/interfaces/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

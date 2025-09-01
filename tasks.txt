@@ -1,0 +1,108 @@
+tarefas 
+
+sub-total de horas: 22
+margem de segurança: 25% à mais
+total de horas: 27,5
+
+**OBS: pode ser que eu mudo esse arquivo, caso venha a fazer algo a mais, como os opcionais e/ou algum outro ponto das tarefas.
+caso eu mudar, irei versionar de algum modo, além do histórico dos commits, para ficar mais fácil e rápido o entendimento.
+saliento que, nunca usei RabbitMQ. já trabalhei com algo semelhante eu creio, que foi o cloud tasks e workers do google cloud.
+me esforçarei ao máximo para criar a melhor solução. desde já agradeço novamente a oportunidade!!
+
+
+título: configuração de ambiente OK
+descrição: farei a instalação, configuração do docker desktop na minha máquina (windows 10) e definição das confirações do arquivo ymal do projeto
+horas: 3
+sub-tarefas:
+    título: docker desktop
+    descrição: 
+    horas: 1
+
+    título: configurar yaml e docker
+    descrição: definição do arquivo yaml com as imagens e configurações docker
+    horas: 2
+
+título: api rest
+descrição:
+horas: 6
+sub-tarefas: 
+    título: contrução báscia com dados fixos OK
+    descrição: 
+    horas: 2
+    
+    título: integrar com banco de dados
+    descrição: criar banco, modelar, criar migrações e integrar com a api
+    horas: 4
+
+título: RabbitMQ + Worker
+descrição: 
+horas: 10
+sub-tarefas:
+    título: pesquisar sobre e entender como funciona
+    descrição:
+    horas: 3
+    
+    título: implementar na api
+    descrição: 
+    horas: 7
+
+título: documentações
+descrição: 
+horas: 3
+sub-tarefas:
+    título: como rodar o projeto
+    descrição:
+    horas: 1
+
+    título: explicações da estrutura do projeto
+    descrição:
+    horas: 1
+
+    título: explanações das decisões
+    descrição:
+    horas: 1
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+conectar com banco
+    criar migrations ok
+    criar seeds 
+    implementar os endpoints
+        criar validaçao para o fluxo de troca de status ok
+        aplicar regras de negocio
+        estabelecer padrao de retorno sematico  ok 
+        revisar os melhores padroes em api rest 
+        criar fluxo de mensageria
+adicionar documentacao com swagger ok
+documentar como rodar ok
+
+setup ok
+build ok
+estudo sobre amqp ok
+    implementacao de exemplo com amqp
+
+
+opcicionais
+
+
+
+
+
+
+====================================
+
+Nível I:
+    Validação robusta de dados de entrada
+    Logs estruturados em formato JSON
+    README detalhado com exemplos de uso
+Nível II:
+    Testes automatizados (unitários e integração)
+    API documentation (Swagger/OpenAPI)
+    Health checks para API e Worker
+    Rate limiting básico nos endpoints
+Nivel III:
+    Dead Letter Queue para mensagens com falha
+    Metrics/Monitoring básico (contadores, timers)
+    Graceful shutdown dos serviços
+    Environment-based configuration
+    Database connection poolingv
+
+Collection do Postman/Insomnia para testes (opcional)
